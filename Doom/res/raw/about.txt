@@ -1,0 +1,8 @@
+Thank you for buying Doom Touch.
+Please consider leaving a comment on Google Play if you like this app, it really motivates development :)
+
+This port uses GPL code from Prboom Plus.
+Now also code from Chocolate Doom.
+Now also thanks to ZDoom and GZDoom. Non GPL code removed and FMOD upgraded to FMOD Studio. 
+
+Thank you to all who have contributed to those projects.

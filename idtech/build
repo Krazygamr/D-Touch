@@ -1,0 +1,2 @@
+Install        : libftedroid.so => libs/armeabi/libftedroid.so
+"Compile++ thumb : jk2 <= gles_qgl.cpp

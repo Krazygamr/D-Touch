@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beloko.doom"
+    android:versionCode="22"
+    android:versionName="3.2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/quake_activity"
+        android:largeHeap="true" >
+        <activity
+            android:name="com.beloko.doom.EntryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_entry"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beloko.idtech.prboom.Game"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:process=":Doom"
+            android:screenOrientation="sensorLandscape"
+           >
+        </activity>
+        <activity
+            android:name="com.beloko.idtech.prboom.Server"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:process=":Server"
+            android:screenOrientation="sensorLandscape"
+             >
+        </activity>
+        <activity
+            android:name="com.beloko.idtech.chocdoom.Game"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:process=":Game"
+            android:screenOrientation="sensorLandscape"
+            >
+        </activity>
+        <activity
+            android:name="com.beloko.idtech.chocdoom.Setup"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:process=":Setup"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.beloko.idtech.gzdoom.Game"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:process=":Game"
+            android:screenOrientation="sensorLandscape"
+            >
+        </activity>
+        <activity
+            android:name="com.beloko.idtech.cloudsave.CloudSaveActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_cloud_save"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="19" >
+    </uses-sdk>
+
+</manifest>
